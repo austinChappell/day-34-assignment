@@ -1,0 +1,101 @@
+$color-primary: #DA7654;
+$color-secondary: #A8B89B;
+$color-tertiary: #D9D8CE;
+$color-quarternary: #B1C886;
+$color-black: #050505;
+
+
+body {
+  background: $color-tertiary;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: $color-primary;
+  color: $color-tertiary;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+  margin-bottom: 50px;
+  a {
+    text-decoration: none;
+    color: $color-quarternary;
+    transition: 300ms;
+    cursor: pointer;
+    &:hover {
+      color: $color-tertiary;
+    }
+  }
+}
+
+.container {
+  width: 80%;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.result {
+  border: 1px solid $color-black;
+  border-top: 0;
+  border-collapse: collapse;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  .image {
+    flex-basis: 25%;
+    img {
+      width: 110px;
+      height: 150px;
+    }
+  }
+  .text {
+    flex-basis: 70%;
+    h1 {
+      font-size: 22px;
+      margin: 0;
+      &:hover {
+        color: red;
+        cursor: pointer;
+      }
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  input {
+    width: 100%;
+    margin: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    &:focus {
+      outline: none;      
+    }
+  }
+  button {
+    font-size: 26px;
+    background: $color-tertiary;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 10px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: 100ms;
+    &:hover {
+      background: $color-primary;
+      color: $color-tertiary;
+    }
+  }
+}

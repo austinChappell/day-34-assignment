@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Books</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <nav>
+      <h1>Dog Yoga Books</h1>
+      <a href="/entry"><h1>Add to our Collection</h1></a>
+    </nav>
+    <div class="container">
+      {{ #data }}
+      <div class="result">
+        <div class="image">
+          <img src="{{ image_url }}" />
+        </div>
+        <div class="text">
+          <h1>{{ title }}</h1>
+          <h2>{{ author }}</h2>
+          <h2>{{ publisher }}, {{ year }}</h2>
+          <h2></h2>
+        </div>
+      </div>
+      {{ /data }}
+    </div>
+    <script type="text/javascript" src="/script.js"></script>
+  </body>
+</html>
